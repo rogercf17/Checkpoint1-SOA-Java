@@ -109,7 +109,7 @@ public class Client {
         if (pedido != null) {
             System.out.println("Status atualizado: " + pedido.getStatusPedido()+"\n");
         } else {
-            System.out.println("Erro ao atualizar, Pedido não encontrado.\n");
+            System.out.println("Erro ao atualizar, Pedido não encontrado ou já finalizado.\n");
         }
     }
 

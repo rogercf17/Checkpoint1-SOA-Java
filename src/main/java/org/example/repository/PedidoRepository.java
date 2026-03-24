@@ -33,7 +33,7 @@ public class PedidoRepository {
     public Pedido atualizarStatus(int id, StatusPedido novoStatus) {
         Pedido pedido = buscar(id);
 
-        if (pedido != null) {
+        if (pedido != null && pedido.getStatusPedido() != StatusPedido.FINALIZADO) {
             pedido.setStatusPedido(novoStatus);
             return pedido;
         }
